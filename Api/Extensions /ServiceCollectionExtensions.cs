@@ -1,9 +1,14 @@
 ﻿using System.Security.Claims;
+using System.Text;
 using ApplicationCore.Interfaces.DataAccess;
+using ApplicationCore.Interfaces.DataAccess.Schedules;
+using ApplicationCore.Interfaces.DataAccess.Staffs;
 using Infrastructure.Persistence.Contexts;
 using Infrastructure.Persistence.DataAccess;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 namespace Api.Extensions
@@ -23,17 +28,53 @@ namespace Api.Extensions
 
         public static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration configuration)
         {
-            return services.AddDbContext<HomeNursingContext>(options =>
-                     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            if (!string.IsNullOrEmpty(connectionString))
+            {
+                return services.AddDbContext<HomeNursingContext>(options => options.UseSqlServer(connectionString)); // Specify the migrations assembly
+            }
+            else
+            {
+                return services.AddDbContext<HomeNursingContext>(options => options.UseInMemoryDatabase("HomeNursing"));
+            }
         }
 
         public static IServiceCollection AddBusinessServices(this IServiceCollection services)
         {
+            services.AddScoped<IScheduleRepository, ScheduleRepository>();
+
+            services.AddScoped<IStaffRepository, StaffRepository>();
+
             return services;
         }
 
-        public static IServiceCollection AddSwagger(this IServiceCollection services)
+        public static IServiceCollection AddHandlingToken(this IServiceCollection services, IConfiguration configuration)
         {
+
+            var key = Encoding.ASCII.GetBytes(configuration["Jwt:Key"]);
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+            });
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = configuration["Jwt:Issuer"],
+                    ValidAudience = configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
+            });
             services.AddSwaggerGen(opt =>
             {
                 opt.SwaggerDoc("v1", new OpenApiInfo { Title = "MyAPI", Version = "v1" });

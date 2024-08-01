@@ -18,29 +18,9 @@ namespace Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            // SetUp DbContext
-
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
-            if (!string.IsNullOrEmpty(connectionString))
-            {
-                services.AddDbContext<HomeNursingContext>(options => options.UseSqlServer(connectionString)); // Specify the migrations assembly
-            }
-            else
-            {
-                services.AddDbContext<HomeNursingContext>(options => options.UseInMemoryDatabase("HomeNursing"));
-            }
-
-            services.AddAuthorization();
-
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-            services.AddScoped<IScheduleRepository, ScheduleRepository>();
-
-            services.AddScoped<IStaffRepository, StaffRepository>();
-
+      
             // Mediator 
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
             // Identity User Lockout
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<HomeNursingContext>().AddDefaultTokenProviders();
 
@@ -72,6 +52,7 @@ namespace Infrastructure
             }
             catch
             {
+                throw new Exception("Have something wrong with seedDataAdmnin");
             }
 
             return services;

@@ -106,7 +106,6 @@ namespace Api.Controllers
                 signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
-
         }
     }
 }
