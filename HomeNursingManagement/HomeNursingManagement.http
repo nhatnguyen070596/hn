@@ -1,0 +1,7 @@
+﻿@HomeNursingManagement_HostAddress = http://localhost:5150
+
+GET {{HomeNursingManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+

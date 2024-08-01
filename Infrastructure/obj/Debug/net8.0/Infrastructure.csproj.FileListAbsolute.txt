@@ -1,0 +1,17 @@
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/Infrastructure.runtimeconfig.json
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/ApplicationCore.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/bin/Debug/net8.0/ApplicationCore.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CopyComplete
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll

@@ -1,0 +1,74 @@
+﻿<Properties StartupConfiguration="{7C8BFBF7-004E-48FD-BB8E-7BE800C873A1}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistence/Handler/AddScheduleCommandHandler.cs">
+    <Files>
+      <File FileName="ApplicationCore/DependencyInjection.cs" />
+      <File FileName="Infrastructure/DependencyInjection.cs" />
+      <File FileName="ApplicationCore/Utils/DateUtil.cs" />
+      <File FileName="ApplicationCore/Exceptions/NotFoundException.cs" />
+      <File FileName="ApplicationCore/Entites/Schedule.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Entites/Staff.cs" />
+      <File FileName="ApplicationCore/DTOs/Schedule.cs" />
+      <File FileName="ApplicationCore/Entites/EntityBase.cs" />
+      <File FileName="ApplicationCore/Mappings/GeneralProfile.cs" />
+      <File FileName="ApplicationCore/Interfaces/IScheduleRepository.cs" />
+      <File FileName="Infrastructure/Persistence/Contexts/HomeNursingContext.cs" Line="1" Column="1" />
+      <File FileName="Api/Api.http" />
+      <File FileName="Api/Program.cs" />
+      <File FileName="Api/appsettings.json" />
+      <File FileName="Api/Controllers/ScheduleController.cs" />
+      <File FileName="Api/Properties/launchSettings.json" />
+      <File FileName="Api/appsettings.Development.json" />
+      <File FileName="Api/Api.csproj" />
+      <File FileName="Infrastructure/Migrations/20240717094501_initial.cs" />
+      <File FileName="Infrastructure/Persistence/Handler/GetAllSchedulesHandler.cs" Line="1" Column="1" />
+      <File FileName="Infrastructure/Persistence/Command/AddScheduleCommand.cs" />
+      <File FileName="Infrastructure/Persistence/Handler/AddScheduleCommandHandler.cs" Line="35" Column="45" />
+      <File FileName="ApplicationCore/Exceptions/AutoMapperException.cs" />
+      <File FileName="Infrastructure/Migrations/HomeNursingContextModelSnapshot.cs" />
+      <File FileName="ApplicationCore/Interfaces/IEventBus.cs" Line="6" Column="45" />
+      <File FileName="ApplicationCore/Interfaces/IDomainEvent.cs" Line="8" Column="1" />
+      <File FileName="ApplicationCore/Events/UserCreatedEvent.cs" Line="8" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HomeNursingManagement" expanded="True">
+            <Node name="source" expanded="True">
+              <Node name="ApplicationCore">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Entites" expanded="True" />
+                <Node name="Exceptions" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="Infrastructure" expanded="True">
+                <Node name="Persistence" expanded="True">
+                  <Node name="Contexts" expanded="True" />
+                  <Node name="Handler" expanded="True">
+                    <Node name="AddScheduleCommandHandler.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>NotFoundException</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.source.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <DisabledProjects>
+    <String>WebApi/Infrastructure/Infrastructure.csproj</String>
+    <String>WebApi/ApplicationCore/ApplicationCore.csproj</String>
+    <String>IntegrationTests/ShareDataBaseSetup/ShareDataBaseSetup.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.test.IntegrationTests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.test.ShareDataBase FirstBuild="True" />
+</Properties>

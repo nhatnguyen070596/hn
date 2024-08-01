@@ -1,0 +1,322 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+        "projectName": "ApplicationCore",
+        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj",
+        "projectName": "IntegrationTests",
+        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj"
+              },
+              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj",
+        "projectName": "ShareDataBase",
+        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj",
+        "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
+        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj"
+              },
+              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

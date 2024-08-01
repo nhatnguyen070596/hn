@@ -1,0 +1,12 @@
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/bin/Debug/net8.0/ApplicationCore.deps.json
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/bin/Debug/net8.0/ApplicationCore.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/bin/Debug/net8.0/ApplicationCore.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.csproj.AssemblyReference.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.AssemblyInfo.cs
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/refint/ApplicationCore.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ApplicationCore.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/Debug/net8.0/ref/ApplicationCore.dll

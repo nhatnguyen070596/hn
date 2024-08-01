@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Persistence\" />
+    <None Remove="Migrations\" />
+    <None Remove="Persistence\Contexts\" />
+    <None Remove="Persistence\HomeNursingManagement\obj\Api.EntityFrameworkCore.targets" />
+    <None Remove="Persistence\HomeNursingManagement\obj\obj\Api.EntityFrameworkCore.targets.EntityFrameworkCore.targets" />
+    <None Remove="Persistence\HomeNursingManagement\obj\Infrastructure.csproj.EntityFrameworkCore.targets" />
+    <None Remove="Persistence\obj\Api.EntityFrameworkCore.targets" />
+    <None Remove="Persistence\DataAccess\" />
+    <None Remove="Persistence\Schedules\" />
+    <None Remove="Persistence\Schedules\Queries\" />
+    <None Remove="Persistence\Schedules\Handler\" />
+    <None Remove="Persistence\Schedules\Events\" />
+    <None Remove="Persistence\Schedules\Command\" />
+    <None Remove="Persistence\Staffs\" />
+    <None Remove="Persistence\Staffs\Handler\" />
+    <None Remove="Persistence\Staffs\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Persistence\Contexts\" />
+    <Folder Include="Persistence\DataAccess\" />
+    <Folder Include="Persistence\Schedules\" />
+    <Folder Include="Persistence\Schedules\Queries\" />
+    <Folder Include="Persistence\Schedules\Handler\" />
+    <Folder Include="Persistence\Schedules\Events\" />
+    <Folder Include="Persistence\Schedules\Command\" />
+    <Folder Include="Persistence\Staffs\" />
+    <Folder Include="Persistence\Staffs\Handler\" />
+    <Folder Include="Persistence\Staffs\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.7" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationCore\ApplicationCore.csproj" />
+  </ItemGroup>
+</Project>

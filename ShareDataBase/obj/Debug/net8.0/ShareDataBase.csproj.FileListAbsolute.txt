@@ -1,0 +1,17 @@
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/ShareDataBase.deps.json
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/ShareDataBase.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/ShareDataBase.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/ApplicationCore.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/Infrastructure.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/ApplicationCore.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/bin/Debug/net8.0/Infrastructure.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.csproj.AssemblyReference.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.AssemblyInfoInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.AssemblyInfo.cs
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.csproj.CoreCompileInputs.cache
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.csproj.CopyComplete
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/refint/ShareDataBase.dll
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ShareDataBase.pdb
+/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/Debug/net8.0/ref/ShareDataBase.dll

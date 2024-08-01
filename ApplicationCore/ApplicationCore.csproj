@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Utils\" />
+    <None Remove="Entites\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Mappings\" />
+    <None Remove="DTOs\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Aggregates\" />
+    <None Remove="Events\" />
+    <None Remove="Events\Schedules\" />
+    <None Remove="Interfaces\DataAccess\" />
+    <None Remove="Interfaces\DataAccess\Schedules\" />
+    <None Remove="Interfaces\Events\" />
+    <None Remove="Interfaces\DataAccess\Staffs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utils\" />
+    <Folder Include="Entites\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Aggregates\" />
+    <Folder Include="Events\" />
+    <Folder Include="Events\Schedules\" />
+    <Folder Include="Interfaces\DataAccess\" />
+    <Folder Include="Interfaces\DataAccess\Schedules\" />
+    <Folder Include="Interfaces\Events\" />
+    <Folder Include="Interfaces\DataAccess\Staffs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+</Project>
