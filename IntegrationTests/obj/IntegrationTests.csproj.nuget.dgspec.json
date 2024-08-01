@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj": {}
+    "/Users/nhatnguyenminh/hn/IntegrationTests/IntegrationTests.csproj": {}
   },
   "projects": {
-    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
+    "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+        "projectUniqueName": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+        "projectPath": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj",
         "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/",
+        "outputPath": "/Users/nhatnguyenminh/hn/ApplicationCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -71,14 +71,14 @@
         }
       }
     },
-    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
+    "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/",
+        "outputPath": "/Users/nhatnguyenminh/hn/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -93,8 +93,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj"
+              "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj"
               }
             }
           }
@@ -162,14 +162,14 @@
         }
       }
     },
-    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj": {
+    "/Users/nhatnguyenminh/hn/IntegrationTests/IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj",
+        "projectUniqueName": "/Users/nhatnguyenminh/hn/IntegrationTests/IntegrationTests.csproj",
         "projectName": "IntegrationTests",
-        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj",
+        "projectPath": "/Users/nhatnguyenminh/hn/IntegrationTests/IntegrationTests.csproj",
         "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/obj/",
+        "outputPath": "/Users/nhatnguyenminh/hn/IntegrationTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -184,11 +184,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj"
+              "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj"
               },
-              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj": {
-                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj"
+              "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj"
               }
             }
           }
@@ -252,14 +252,14 @@
         }
       }
     },
-    "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj": {
+    "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj",
+        "projectUniqueName": "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj",
         "projectName": "ShareDataBase",
-        "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj",
+        "projectPath": "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj",
         "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-        "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/obj/",
+        "outputPath": "/Users/nhatnguyenminh/hn/ShareDataBase/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -274,11 +274,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
-                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj"
+              "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj"
               },
-              "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj"
+              "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj"
               }
             }
           }

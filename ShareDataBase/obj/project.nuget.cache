@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "90XRxnQw7YTPyB4KDp3yaYYTm3k9mD4xXdl3fnD5T/z7q8qEjLGuqQ9RxhpnkWTCvQiScQO3vL+s9OlbdmC+vg==",
+  "dgSpecHash": "1iWE9aaOt20ffhO6lK5talJrzMH3HALEms/UdyMDavpckQsU4brCy2ZJJ54EFWwgO4jqG7TVN4X/2wgceZkEpg==",
   "success": true,
-  "projectFilePath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ShareDataBase/ShareDataBase.csproj",
+  "projectFilePath": "/Users/nhatnguyenminh/hn/ShareDataBase/ShareDataBase.csproj",
   "expectedPackageFiles": [
     "/Users/nhatnguyenminh/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nhatnguyenminh/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -4987,11 +4987,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Api/Api.csproj",
+      "projectUniqueName": "/Users/nhatnguyenminh/hn/Api/Api.csproj",
       "projectName": "Api",
-      "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Api/Api.csproj",
+      "projectPath": "/Users/nhatnguyenminh/hn/Api/Api.csproj",
       "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-      "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Api/obj/",
+      "outputPath": "/Users/nhatnguyenminh/hn/Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -5006,8 +5006,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj"
+            "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj"
             }
           }
         }

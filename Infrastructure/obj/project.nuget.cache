@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rEDppDjQGarR9vKOlfNDDSMGhJzd090rk7wmbvsayOOIMAXF0qQ+OgYBt0DQTu7YYo+ccSrv5R+ihL7PRzdVPA==",
+  "dgSpecHash": "aXqrQGkPWQDwqbYOMnMinfgzM3WpELS8RyBJtjimgaa2jRdKhZ363yjE7mnVyfH26W7C4LYr5GypSm78LpGtqQ==",
   "success": true,
-  "projectFilePath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/nhatnguyenminh/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nhatnguyenminh/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

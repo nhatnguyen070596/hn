@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vbBoNO/aISNIWdPAsWegJg4ofmL4Pza4CCaXu7BnDHSWQY+BnkqQqZXBbt+PxFvOGJ8nH5hmzJfiE8RlCLyI6w==",
+  "dgSpecHash": "eLvGjl2b14E4xrDM3B4ULsJhAbEQTIDzyC4enL6xu3ScqEzmO2/WJpV2Tdh3wpjApVqW6MNE94MZk0HWiOnVpw==",
   "success": true,
-  "projectFilePath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Api/Api.csproj",
+  "projectFilePath": "/Users/nhatnguyenminh/hn/Api/Api.csproj",
   "expectedPackageFiles": [
     "/Users/nhatnguyenminh/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nhatnguyenminh/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

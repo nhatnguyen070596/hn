@@ -4723,11 +4723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/nhatnguyenminh/hn/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-      "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/Infrastructure/obj/",
+      "outputPath": "/Users/nhatnguyenminh/hn/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
@@ -4742,8 +4742,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj": {
-              "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj"
+            "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj": {
+              "projectPath": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj"
             }
           }
         }

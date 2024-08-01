@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c3lizaw7UfEz8qYeAaUEkQVNkw44IPDrp8+hTRhspSrysT+b89pRp0Z4eOBu67cKNm2o9qnu1DiA0ZIOqx4NFg==",
+  "dgSpecHash": "cWN0ZP2/fuG76ptJK+ALElXC9jAMPnkAKmp70txkK4mT5PcDK8n0llt56R1TNJhzXFzBWtbOxJNBm2OS+dK4fw==",
   "success": true,
-  "projectFilePath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/IntegrationTests/IntegrationTests.csproj",
+  "projectFilePath": "/Users/nhatnguyenminh/hn/IntegrationTests/IntegrationTests.csproj",
   "expectedPackageFiles": [
     "/Users/nhatnguyenminh/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nhatnguyenminh/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -413,11 +413,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+      "projectUniqueName": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj",
       "projectName": "ApplicationCore",
-      "projectPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/ApplicationCore.csproj",
+      "projectPath": "/Users/nhatnguyenminh/hn/ApplicationCore/ApplicationCore.csproj",
       "packagesPath": "/Users/nhatnguyenminh/.nuget/packages/",
-      "outputPath": "/Users/nhatnguyenminh/Projects/HomeNursingManagement/ApplicationCore/obj/",
+      "outputPath": "/Users/nhatnguyenminh/hn/ApplicationCore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nhatnguyenminh/.nuget/NuGet/NuGet.Config"
