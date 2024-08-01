@@ -52,7 +52,7 @@ namespace Infrastructure
             }
             catch
             {
-                throw new Exception("Have something wrong with seedDataAdmnin");
+                throw new Exception("Have something wrong with create context - infratructure");
             }
 
             return services;
