@@ -43,7 +43,7 @@ namespace Infrastructure.Persistence.DataAccess
 
             foreach (var domainEvent in domainEvents)
             {
-                _ = _publisher.Publish(domainEvent, cancellationToken);
+                 _publisher.Publish(domainEvent, cancellationToken);
             }
 
             await _context.SaveChangesAsync(cancellationToken);

@@ -21,7 +21,7 @@ namespace ShareDataBase
                     .RuleFor(o => o.StaffName, f => $"staff name {staffId}")
                     .RuleFor(o => o.Description, f => $"staff Description {staffId}")
                     .RuleFor(o => o.IsActive, f => true)
-                    .RuleFor(o => o.StaffType, f => f.Random.Number(1, 4))
+                    .RuleFor(o => o.StaffType, f => 1)
                     .RuleFor(o => o.CreatedAt, f => DateUtil.GetCurrentDate())
                     .RuleFor(o => o.UpdatedAt, f => DateUtil.GetCurrentDate());
                 var staffs = fakerStaff.Generate(10);

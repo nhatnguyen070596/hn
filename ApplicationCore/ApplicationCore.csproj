@@ -20,6 +20,8 @@
     <None Remove="Interfaces\DataAccess\Schedules\" />
     <None Remove="Interfaces\Events\" />
     <None Remove="Interfaces\DataAccess\Staffs\" />
+    <None Remove="Extentions\" />
+    <None Remove="Interfaces\DataAccess\Filter\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utils\" />
@@ -35,6 +37,8 @@
     <Folder Include="Interfaces\DataAccess\Schedules\" />
     <Folder Include="Interfaces\Events\" />
     <Folder Include="Interfaces\DataAccess\Staffs\" />
+    <Folder Include="Extentions\" />
+    <Folder Include="Interfaces\DataAccess\Filter\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />

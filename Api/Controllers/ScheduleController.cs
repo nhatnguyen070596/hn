@@ -13,7 +13,7 @@ namespace Api.Controllers
     [Route("[controller]")]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces("application/json")]
-    [Authorize]
+    //[Authorize]
     public class ScheduleController : ControllerBase
     {
         private readonly ILogger<ScheduleController> _logger;
@@ -45,6 +45,13 @@ namespace Api.Controllers
         public async Task<ActionResult> GetScheduleById(int schId)
         {
             return Ok(await mediator.Send(new FindScheduleBySchIdQuery(schId)));
+        }
+
+        [HttpPost("searchSchedulesByConditons")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(SearchSchedule))]
+        public async Task<ActionResult> searchSchedulesByConditons(SearchSchedule request)
+        {
+            return Ok(await mediator.Send(new SearchSchedulesByConditionsQuery(request)));
         }
     }
 }

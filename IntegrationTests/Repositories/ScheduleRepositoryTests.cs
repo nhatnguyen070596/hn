@@ -1,5 +1,6 @@
 ﻿using System;
 using ApplicationCore.DTOs;
+using ApplicationCore.Entites;
 using ApplicationCore.Interfaces.DataAccess;
 using ApplicationCore.Mappings;
 using AutoMapper;
@@ -9,6 +10,7 @@ using Infrastructure.Persistence.Schedules.Command;
 using Infrastructure.Persistence.Schedules.Handler;
 using Infrastructure.Persistence.Schedules.Queries;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Moq;
 
@@ -41,6 +43,32 @@ namespace IntegrationTests.Repositories
                 var schedule = await handler.Handle(new GetAllSchedulesQuery(), CancellationToken.None);
 
                 Assert.Equal(10, schedule.Count);
+            }
+        }
+
+        [Fact]
+        public async Task SearchSchedule_ReturnsAllData()
+        {
+            using (var context = Fixture.CreateContext())
+            {
+                var handler = new SearchSchedulesByConditionHandler(context, _mapper);
+
+                var schedule = await context.Schedules.ToListAsync();
+                var staff = await context.Staffs.ToListAsync();
+                var dataExpected = await context.Schedules.Include(o => o.Staff)
+                    .Where(r => r.IsActive && r.SchType == 1 && r.Staff.StaffType == 1 && r.Staff.IsActive).ToListAsync();
+
+                var data = await handler.Handle(new SearchSchedulesByConditionsQuery(new SearchSchedule
+                {
+                    SchType = 1,
+                    StaffName = null,
+                    StaffType = 1,
+                    StaffId = 1,
+                    IsActive = true
+                }), CancellationToken.None);
+
+
+                Assert.Equal(dataExpected.Count(), data.Count());
             }
         }
 

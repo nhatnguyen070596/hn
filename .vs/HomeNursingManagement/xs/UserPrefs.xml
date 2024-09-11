@@ -1,18 +1,25 @@
 ﻿<Properties StartupConfiguration="{7C8BFBF7-004E-48FD-BB8E-7BE800C873A1}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistence/Handler/AddScheduleCommandHandler.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.source.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.test.IntegrationTests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.test.ShareDataBase FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApplicationCore/Interfaces/DataAccess/Staffs/IStaffRepository.cs">
     <Files>
       <File FileName="ApplicationCore/DependencyInjection.cs" />
       <File FileName="Infrastructure/DependencyInjection.cs" />
       <File FileName="ApplicationCore/Utils/DateUtil.cs" />
-      <File FileName="ApplicationCore/Exceptions/NotFoundException.cs" />
-      <File FileName="ApplicationCore/Entites/Schedule.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Exceptions/NotFoundException.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Entites/Schedule.cs" />
       <File FileName="ApplicationCore/Entites/Staff.cs" />
       <File FileName="ApplicationCore/DTOs/Schedule.cs" />
       <File FileName="ApplicationCore/Entites/EntityBase.cs" />
       <File FileName="ApplicationCore/Mappings/GeneralProfile.cs" />
-      <File FileName="ApplicationCore/Interfaces/IScheduleRepository.cs" />
-      <File FileName="Infrastructure/Persistence/Contexts/HomeNursingContext.cs" Line="1" Column="1" />
+      <File FileName="Infrastructure/Persistence/Contexts/HomeNursingContext.cs" />
       <File FileName="Api/Api.http" />
       <File FileName="Api/Program.cs" />
       <File FileName="Api/appsettings.json" />
@@ -21,54 +28,79 @@
       <File FileName="Api/appsettings.Development.json" />
       <File FileName="Api/Api.csproj" />
       <File FileName="Infrastructure/Migrations/20240717094501_initial.cs" />
-      <File FileName="Infrastructure/Persistence/Handler/GetAllSchedulesHandler.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/Persistence/Command/AddScheduleCommand.cs" />
-      <File FileName="Infrastructure/Persistence/Handler/AddScheduleCommandHandler.cs" Line="35" Column="45" />
-      <File FileName="ApplicationCore/Exceptions/AutoMapperException.cs" />
+      <File FileName="ApplicationCore/Exceptions/AutoMapperException.cs" Line="1" Column="1" />
       <File FileName="Infrastructure/Migrations/HomeNursingContextModelSnapshot.cs" />
-      <File FileName="ApplicationCore/Interfaces/IEventBus.cs" Line="6" Column="45" />
-      <File FileName="ApplicationCore/Interfaces/IDomainEvent.cs" Line="8" Column="1" />
-      <File FileName="ApplicationCore/Events/UserCreatedEvent.cs" Line="8" Column="1" />
+      <File FileName="Infrastructure/Persistence/Schedules/Command/AddScheduleCommand.cs" Line="9" Column="37" />
+      <File FileName="Infrastructure/Persistence/Schedules/Events/ScheduleCreatedDomainEventHandler.cs" Line="27" Column="57" />
+      <File FileName="Infrastructure/Persistence/Schedules/Queries/GetAllSchedulesQuery.cs" />
+      <File FileName="IntegrationTests/GlobalUsings.cs" />
+      <File FileName="IntegrationTests/SharedDatabaseFixture.cs" />
+      <File FileName="IntegrationTests/Repositories/StaffRepository.cs" />
+      <File FileName="Infrastructure/Persistence/DataAccess/UnitOfWork.cs" />
+      <File FileName="Infrastructure/Persistence/DataAccess/StaffRepository.cs" />
+      <File FileName="Infrastructure/Persistence/DataAccess/Repository.cs" Line="23" Column="56" />
+      <File FileName="Infrastructure/Persistence/DataAccess/ScheduleRepository.cs" Line="1" Column="1" />
+      <File FileName="IntegrationTests/UnitOfworkFixture.cs" />
+      <File FileName="Infrastructure/Persistence/Schedules/Handler/GetAllSchedulesHandler.cs" Line="23" Column="55" />
+      <File FileName="Infrastructure/Persistence/Schedules/Handler/AddScheduleCommandHandler.cs" />
+      <File FileName="ApplicationCore/Interfaces/DataAccess/Staffs/IStaffRepository.cs" Line="13" Column="1" />
+      <File FileName="Infrastructure/Persistence/Schedules/Queries/FindScheduleBySchIdQuery.cs" />
+      <File FileName="IntegrationTests/Repositories/ScheduleRepositoryTests.cs" />
+      <File FileName="ShareDataBase/ShareDataBaseSetup.cs" />
+      <File FileName="ApplicationCore/Aggregates/AggregateRoot.cs" Line="11" Column="24" />
+      <File FileName="ApplicationCore/Events/Schedules/ScheduleCreatedDomainEvent.cs" Line="1" Column="1" />
+      <File FileName="ApplicationCore/Interfaces/DataAccess/Schedules/IScheduleRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HomeNursingManagement" expanded="True">
+          <Node name="HomeNursingManagement">
             <Node name="source" expanded="True">
-              <Node name="ApplicationCore">
-                <Node name="Dependencies" expanded="True" />
+              <Node name="ApplicationCore" expanded="True">
+                <Node name="Aggregates" expanded="True" />
+                <Node name="DTOs" expanded="True" />
                 <Node name="Entites" expanded="True" />
+                <Node name="Events" expanded="True">
+                  <Node name="Schedules" expanded="True" />
+                </Node>
                 <Node name="Exceptions" expanded="True" />
-                <Node name="Interfaces" expanded="True" />
+                <Node name="Interfaces" expanded="True">
+                  <Node name="DataAccess" expanded="True">
+                    <Node name="Schedules" expanded="True" />
+                    <Node name="Staffs" expanded="True">
+                      <Node name="IStaffRepository.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Mappings" expanded="True" />
               </Node>
               <Node name="Infrastructure" expanded="True">
                 <Node name="Persistence" expanded="True">
                   <Node name="Contexts" expanded="True" />
-                  <Node name="Handler" expanded="True">
-                    <Node name="AddScheduleCommandHandler.cs" selected="True" />
+                  <Node name="DataAccess" expanded="True" />
+                  <Node name="Schedules" expanded="True">
+                    <Node name="Command" expanded="True" />
+                    <Node name="Events" expanded="True" />
+                    <Node name="Handler" expanded="True" />
+                    <Node name="Queries" expanded="True" />
                   </Node>
                 </Node>
               </Node>
             </Node>
+            <Node name="test" expanded="True">
+              <Node name="IntegrationTests" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="ShareDataBase" expanded="True" />
+            </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>NotFoundException</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.source.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <DisabledProjects>
     <String>WebApi/Infrastructure/Infrastructure.csproj</String>
     <String>WebApi/ApplicationCore/ApplicationCore.csproj</String>
     <String>IntegrationTests/ShareDataBaseSetup/ShareDataBaseSetup.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.test.IntegrationTests FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.test.ShareDataBase FirstBuild="True" />
 </Properties>

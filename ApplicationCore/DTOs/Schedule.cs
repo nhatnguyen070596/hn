@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ApplicationCore.Entites;
+using ApplicationCore.Interfaces.DataAccess.Filter;
 
 namespace ApplicationCore.DTOs
 {
@@ -50,5 +51,32 @@ namespace ApplicationCore.DTOs
     {
 
     }
-}
 
+    public class SearchScheduleReponse
+    {
+        public int schId { get; set; }
+
+        public int SchType { get; set; }
+
+        public string StaffName { get; set; }
+
+        public int StaffId { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public int StaffType { get; set; }
+    }
+
+    public class SearchSchedule : Filter
+    {
+        public int? SchType { get; set; }
+
+        public string? StaffName { get; set; }
+
+        public int? StaffType { get; set; }
+
+        public int? StaffId { get; set; }
+
+        public bool? IsActive { get; set; }
+    }
+}

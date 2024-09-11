@@ -30,6 +30,12 @@ namespace ApplicationCore.Mappings
 
             CreateMap<Schedule, SingleScheduleResponse>();
 
+            CreateMap<Schedule, SearchSchedule>();
+
+
+            CreateMap<Schedule, SearchScheduleReponse>()
+                .ForMember(dest => dest.StaffType, opt => opt.MapFrom(src => src.Staff.StaffType));
+
 
             ///staff mappper
             ///
