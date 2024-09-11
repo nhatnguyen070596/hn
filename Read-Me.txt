@@ -1,0 +1,22 @@
+﻿Readme
+
+* Server: localhost
+* Authentication type: SQL login
+* User name: sa
+* Pass: Password.1
+
+Install Docker and Run
+
+sudo docker pull mcr.microsoft.com/azure-sql-edge:latest
+
+sudo docker run --cap-add SYS_PTRACE -e 'ACCEPT_EULA=1' -e 'MSSQL_SA_PASSWORD=Password.1' -p 1433:1433 --name azuresqledge -d mcr.microsoft.com/azure-sql-edge
+
+
+
+migrations database
+
+dotnet ef --startup-project ../HomeNursingManagement/Api migrations add initial -c HomeNursingContext -p ../HomeNursingManagement/Infrastructure/Infrastructure.csproj
+
+dotnet ef --startup-project ../HomeNursingManagement/Api database update initial -c HomeNursingContext -p ../HomeNursingManagement/Infrastructure/Infrastructure.csproj
+
+ "DefaultConnection": "Data Source=localhost;Initial Catalog=HomeNursing;User Id=sa; Password=Password.1; TrustServerCertificate=True;"

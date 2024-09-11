@@ -9,40 +9,40 @@ namespace ApplicationCore.Extentions
 {
 	public static class FilterAggregateExtentions
 	{
-        public static IQueryable<TExpected> Where<T, TExpected>(this IQueryable<TExpected> data, T dataSearch)
+        public static IQueryable<TExpected> Where<T, TExpected>(this IQueryable<TExpected> data, T filter)
         where T : Filter where TExpected : class
         {
-            var filteringExpression = SetConditions<T,TExpected>(dataSearch);
+            var filteringExpression = SetConditions<T,TExpected>(filter);
             return data.Where(filteringExpression);
         }
 
         // Use expression trees to build filtering conditions for IQueryable (without compiling)
-        private static Expression<Func<TExpected, bool>> SetConditions<T, TExpected>(T searchData)
+        private static Expression<Func<TExpected, bool>> SetConditions<T, TExpected>(T filter)
         where T : Filter where TExpected : class
         {
             var parameter = Expression.Parameter(typeof(TExpected),nameof(TExpected));
             Expression? predicateBody = null;
 
-            var searchProperties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
-            var rootProperties = typeof(TExpected).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            var filterProperties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            var metaDataProperties = typeof(TExpected).GetProperties(BindingFlags.Public | BindingFlags.Instance);
 
-            foreach (var propertyInfo in searchProperties)
+            foreach (var propertyInfo in filterProperties)
             {
-                var rootProperty = rootProperties
+                var rootProperty =  metaDataProperties
                                    .FirstOrDefault(r => r.Name == propertyInfo.Name && r.GetType() == propertyInfo.GetType());
 
                 if (rootProperty is not null)
                 {
-                    var searchValue = propertyInfo.GetValue(searchData);
+                    var filterValue = propertyInfo.GetValue(filter);
 
-                    if (searchValue is not null && !searchValue.Equals(0))
+                    if (filterValue is not null && !filterValue.Equals(0))
                     {
                         var propertyAccess = Expression.Property(parameter, rootProperty);
 
                         //Meta data property
                         Expression left = propertyAccess; 
                         //Search value 
-                        Expression right = Expression.Constant(searchValue);
+                        Expression right = Expression.Constant(filterValue);
 
                         var equalityCheck = Expression.Equal(left, right);
 

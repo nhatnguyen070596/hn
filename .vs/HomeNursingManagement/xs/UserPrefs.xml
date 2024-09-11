@@ -1,13 +1,4 @@
 ﻿<Properties StartupConfiguration="{7C8BFBF7-004E-48FD-BB8E-7BE800C873A1}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.source.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.test.IntegrationTests FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.test.ShareDataBase FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="ApplicationCore/Interfaces/DataAccess/Staffs/IStaffRepository.cs">
     <Files>
       <File FileName="ApplicationCore/DependencyInjection.cs" />
@@ -98,9 +89,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.source.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <DisabledProjects>
     <String>WebApi/Infrastructure/Infrastructure.csproj</String>
     <String>WebApi/ApplicationCore/ApplicationCore.csproj</String>
     <String>IntegrationTests/ShareDataBaseSetup/ShareDataBaseSetup.csproj</String>
   </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
