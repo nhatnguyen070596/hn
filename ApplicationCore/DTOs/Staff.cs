@@ -21,6 +21,7 @@ namespace ApplicationCore.DTOs
         public int StaffId { get; set; }
     }
 
+
     public class StaffResponse
     {
         public StaffResponse(int staffId, string staffName, int staffType, bool isActive)

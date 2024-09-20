@@ -12,7 +12,7 @@ namespace ApplicationCore.Extentions
         public static IQueryable<TExpected> Where<T, TExpected>(this IQueryable<TExpected> data, T filter)
         where T : Filter where TExpected : class
         {
-            var filteringExpression = SetConditions<T,TExpected>(filter);
+            Expression<Func<TExpected, bool>> filteringExpression = SetConditions<T,TExpected>(filter);
             return data.Where(filteringExpression);
         }
 
@@ -28,19 +28,18 @@ namespace ApplicationCore.Extentions
 
             foreach (var propertyInfo in filterProperties)
             {
-                var rootProperty =  metaDataProperties
+                 var rootProperty =  metaDataProperties
                                    .FirstOrDefault(r => r.Name == propertyInfo.Name && r.GetType() == propertyInfo.GetType());
 
                 if (rootProperty is not null)
                 {
                     var filterValue = propertyInfo.GetValue(filter);
 
-                    if (filterValue is not null && !filterValue.Equals(0))
+                    if (filterValue is not null)
                     {
                         var propertyAccess = Expression.Property(parameter, rootProperty);
-
                         //Meta data property
-                        Expression left = propertyAccess; 
+                        Expression left = propertyAccess;
                         //Search value 
                         Expression right = Expression.Constant(filterValue);
 
@@ -53,10 +52,8 @@ namespace ApplicationCore.Extentions
             }
 
             if (predicateBody == null)
-            {
                 // Return an expression that always returns true if no conditions are set
                 return Expression.Lambda<Func<TExpected, bool>>(Expression.Constant(true), parameter);
-            }
 
             // Create the final predicate lambda expression
             return Expression.Lambda<Func<TExpected, bool>>(predicateBody, parameter);

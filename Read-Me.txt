@@ -20,3 +20,13 @@ dotnet ef --startup-project ../HomeNursingManagement/Api migrations add initial 
 dotnet ef --startup-project ../HomeNursingManagement/Api database update initial -c HomeNursingContext -p ../HomeNursingManagement/Infrastructure/Infrastructure.csproj
 
  "DefaultConnection": "Data Source=localhost;Initial Catalog=HomeNursing;User Id=sa; Password=Password.1; TrustServerCertificate=True;"
+
+
+
+
+Redis with docker
+
+docker run --name my-redis -p 6379:6379 -d redis:latest
+
+Using redis insight to connect with REDIS
+

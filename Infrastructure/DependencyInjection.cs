@@ -6,10 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 using Infrastructure.Persistence.DataAccess;
-using ApplicationCore.Interfaces.DataAccess;
-using ApplicationCore.Interfaces.DataAccess.Schedules;
-using ApplicationCore.Interfaces.DataAccess.Staffs;
 using MediatR;
+using ApplicationCore.Interfaces.DataAccess.Redis;
+using StackExchange.Redis;
 
 namespace Infrastructure
 {
@@ -43,6 +42,16 @@ namespace Infrastructure
                 // Vô hiệu hóa yêu cầu xác thực hai yếu tố
                 options.Tokens.AuthenticatorIssuer = null;
             });
+
+            services.AddSingleton<IConnectionMultiplexer>(sp =>
+            {
+                var configuration = ConfigurationOptions.Parse("localhost:6379", true);
+                configuration.DefaultDatabase = 1;
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+
+            // Register the RedisRepository
+            services.AddScoped<IRedisRepository, RedisRepository>();
 
             var serviceProvider = services.BuildServiceProvider();
             try
